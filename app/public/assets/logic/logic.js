@@ -30,8 +30,10 @@
       		.done(function(data) {
       		
       			$('#userMatch').html(data.matchName);
-		    	$("#userMatchImage").attr("src", data.matchImage);
-      			$('#modal1').modal('open');
+		    	$('#userMatchImage').attr("src", data.matchImage);
+		    	$('<img src="../agatha.gif">').appendTo("#matchreveal");
+
+
       		});
 		});
 	</script>
